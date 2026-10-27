@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 280" width="100%" height="100%">
+  <defs>
+    <!-- Metallic Gold Gradient -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="25%" stop-color="#eab308" />
+      <stop offset="50%" stop-color="#ca8a04" />
+      <stop offset="75%" stop-color="#eab308" />
+      <stop offset="100%" stop-color="#a16207" />
+    </linearGradient>
+    
+    <!-- Tech Blue Gradient -->
+    <linearGradient id="techBlueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b" />
+      <stop offset="50%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#0284c7" />
+    </linearGradient>
+
+    <!-- Node Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Network Mesh / Constellation Lines Behind & Across ICSTA -->
+  <g stroke="#38bdf8" stroke-width="1.8" opacity="0.6">
+    <line x1="80" y1="90" x2="140" y2="40" />
+    <line x1="140" y1="40" x2="220" y2="60" />
+    <line x1="220" y1="60" x2="170" y2="120" />
+    <line x1="170" y1="120" x2="80" y2="90" />
+    <line x1="170" y1="120" x2="240" y2="140" />
+    <line x1="220" y1="60" x2="310" y2="80" />
+    <line x1="240" y1="140" x2="310" y2="80" />
+    <line x1="310" y1="80" x2="410" y2="50" />
+    <line x1="310" y1="80" x2="360" y2="130" />
+    <line x1="410" y1="50" x2="480" y2="90" />
+    <line x1="480" y1="90" x2="570" y2="60" />
+    <line x1="570" y1="60" x2="650" y2="110" />
+    <line x1="480" y1="90" x2="530" y2="145" />
+    <line x1="530" y1="145" x2="650" y2="110" />
+  </g>
+
+  <!-- Mesh Dots / Nodes -->
+  <g fill="#38bdf8" filter="url(#glow)">
+    <circle cx="80" cy="90" r="4.5" />
+    <circle cx="140" cy="40" r="4" fill="#67e8f9" />
+    <circle cx="220" cy="60" r="5" fill="#bae6fd" />
+    <circle cx="170" cy="120" r="4" />
+    <circle cx="240" cy="140" r="4.5" fill="#facc15" />
+    <circle cx="310" cy="80" r="5" fill="#fde047" />
+    <circle cx="360" cy="130" r="4" fill="#eab308" />
+    <circle cx="410" cy="50" r="5.5" fill="#fef08a" />
+    <circle cx="480" cy="90" r="4.5" fill="#facc15" />
+    <circle cx="530" cy="145" r="4" fill="#38bdf8" />
+    <circle cx="570" cy="60" r="5" fill="#fef08a" />
+    <circle cx="650" cy="110" r="4.5" fill="#ca8a04" />
+  </g>
+
+  <!-- Letter I -->
+  <rect x="50" y="30" width="38" height="135" rx="6" fill="url(#techBlueGrad)" />
+
+  <!-- Letter C -->
+  <path d="M 230 48 C 215 35 195 30 170 30 C 115 30 75 70 75 125 C 75 180 115 220 170 220 C 200 220 225 210 240 192 L 210 162 C 200 172 185 180 170 180 C 135 180 112 152 112 125 C 112 98 135 70 170 70 C 188 70 200 78 210 88 Z" fill="url(#techBlueGrad)" transform="translate(45, -25)" />
+
+  <!-- Letter S -->
+  <path d="M 380 40 C 350 30 300 45 300 78 C 300 115 385 105 385 138 C 385 158 360 165 340 165 C 310 165 290 150 280 138 L 260 168 C 275 188 305 205 340 205 C 385 205 425 180 425 138 C 425 95 340 105 340 75 C 340 60 360 55 375 55 C 395 55 412 65 420 75 Z" fill="url(#goldGrad)" transform="translate(10, -10)" />
+
+  <!-- Letter T -->
+  <path d="M 430 35 L 565 35 L 565 72 L 515 72 L 515 195 L 480 195 L 480 72 L 430 72 Z" fill="url(#goldGrad)" />
+
+  <!-- Letter A -->
+  <path d="M 620 35 L 560 195 L 600 195 L 615 155 L 670 155 L 685 195 L 725 195 L 665 35 Z M 642 78 L 660 125 L 625 125 Z" fill="url(#goldGrad)" />
+
+  <!-- Subtitle Text -->
+  <text x="400" y="240" font-family="'Outfit', 'Inter', sans-serif" font-size="23" font-weight="800" text-anchor="middle" fill="#0f172a" letter-spacing="1.5">
+    1st INTERNATIONAL CONFERENCE OF
+  </text>
+  <text x="400" y="268" font-family="'Outfit', 'Inter', sans-serif" font-size="22" font-weight="800" text-anchor="middle" fill="#0f172a" letter-spacing="1.5">
+    SMART TRANSPORTATION AND AVIATION
+  </text>
+</svg>
